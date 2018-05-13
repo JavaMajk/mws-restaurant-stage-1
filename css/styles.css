@@ -498,4 +498,10 @@ nav h1 a {
     margin: 0;
     margin-bottom: 15px;
   }
+
+  #reviews-container .review-heading .reviewer-name {
+    font-size: 21px;
+    flex: 1;
+  }
+
 }
