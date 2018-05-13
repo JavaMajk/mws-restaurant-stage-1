@@ -156,6 +156,14 @@ createRestaurantHTML = (restaurant) => {
   address.innerHTML = restaurant.address;
   li.append(address);
 
+  const stars = document.createElement('p');
+  stars.className = 'avg-rating';
+  const ratingi = restaurant.reviews;
+  const ratings = ratingi.map(rating => rating.rating);
+  const avgRating = ratings.reduce((x, y) => x + y) / ratings.length;
+  stars.innerHTML = `Average Rating: <strong>${avgRating.toFixed(1)}<strong>`;
+  li.append(stars);
+
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
