@@ -9,7 +9,7 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const port = 80 // Change this to your server port
-    return `https://github.com/JavaMajk/mws-restaurant-stage-1/blob/master/data/restaurants.json`;
+    return `https://javamajk.github.io/mws-restaurant-stage-1/data/restaurants.json`;
   }
 
   /**
