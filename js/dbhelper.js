@@ -154,7 +154,7 @@ class DBHelper {
   }
 
   static lowImageUrlForRestaurant(restaurant) {
-    return (`https://javamajk.github.io/mws-restaurant-stage-1/img/${restaurant.lowphotograph}`);
+    return (`https://javamajk.github.io/mws-restaurant-stage-1/img/${restaurant.lowphotograph}?w=800&h=600&fit=crop&crop=entropy&px=16&blur=200&fm=webp`);
   }
 
   /**
