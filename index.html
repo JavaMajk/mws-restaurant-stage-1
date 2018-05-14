@@ -42,6 +42,19 @@
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4g9NpS4ICq6L1lvWcV8FbfGMo3DFYmC4&libraries=places&callback=initMap"></script>
+  <script>
+    // Script goes just before </body>
+    // Script from https://varvy.com/pagespeed/defer-images.html
+    function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i=0; i<imgDefer.length; i++) {
+            if(imgDefer[i].getAttribute('data-src')) {
+                imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+            }
+        }
+    }
+    window.onload = init;
+</script>
 
   <footer id="footer">
     Copyright (c) 2017 <a href="/mws-restaurant-stage-1/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.

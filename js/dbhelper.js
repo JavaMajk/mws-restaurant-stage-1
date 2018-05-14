@@ -153,6 +153,10 @@ class DBHelper {
     return (`https://javamajk.github.io/mws-restaurant-stage-1/img/${restaurant.photograph}`);
   }
 
+  static lowImageUrlForRestaurant(restaurant) {
+    return (`https://javamajk.github.io/mws-restaurant-stage-1/img/${restaurant.lowhotograph}`);
+  }
+
   /**
    * Map marker for a restaurant.
    */
