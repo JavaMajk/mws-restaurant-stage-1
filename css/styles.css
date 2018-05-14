@@ -222,6 +222,7 @@ nav h1 a {
   min-height: 238.5px;
   min-width: 100%;
   border-radius: 0 12px 0 0;
+  filter: blur(3px);
 }
 
 #restaurants-list li h1 {

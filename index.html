@@ -60,6 +60,7 @@
         if (imgDefer[i].getAttribute('data-src')) {
           imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
         }
+        imgDefer[i].style.filter = 'blur(0)';
       }
     }
     window.onload = init;
