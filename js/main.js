@@ -142,6 +142,7 @@ createRestaurantHTML = (restaurant) => {
   image.className = 'restaurant-img';
   image.alt = `Photo of ${restaurant.name}`
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.lowsrc = 'https://javamajk.github.io/mws-restaurant-stage-1/img/low.jpeg';
   li.append(image);
 
   const name = document.createElement('h1');

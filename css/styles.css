@@ -281,7 +281,6 @@ nav h1 a {
 .inside #breadcrumb {
   width: 50%;
   background: rgba(192, 191, 191, 0.899);
-  
 }
 
 .inside #breadcrumb li {
@@ -422,7 +421,9 @@ nav h1 a {
 }
 
 /* ============================================= */
+
 /* BREAKPOINTs FOR LI SIZE OF TILES and Reviews */
+
 /* ============================================= */
 
 @media screen and (max-width: 1469px) {
@@ -432,7 +433,6 @@ nav h1 a {
   #restaurants-list li {
     width: 45%;
   }
-
   .inside #map-container {
     background: blue none repeat scroll 0 0;
     height: 400px;
@@ -440,31 +440,30 @@ nav h1 a {
     top: 130px;
     width: 100%;
   }
-  
   .inside #map {
     background-color: #ccc;
     height: 100%;
     width: 100%;
   }
-
   .inside #breadcrumb {
     width: 100%;
     background: rgba(192, 191, 191, 0.899);
     font-weight: 700;
   }
-
   #restaurant-container,
-#reviews-container {
-  width: 69%;
-  margin: 0 auto;
+  #reviews-container {
+    width: 69%;
+    margin: 0 auto;
+  }
+  .inside #footer {
+    width: 100%;
+  }
 }
-.inside #footer {
-  width: 100%;
-}
-}
-
 
 @media screen and (max-width: 769px) {
+  #restaurants-list {
+    padding: 16px;
+  }
   #restaurants-list li {
     width: 92%;
   }
@@ -478,10 +477,16 @@ nav h1 a {
     display: none;
   }
   #restaurant-container,
-#reviews-container {
-  width: 100%;
-  margin: 0 auto;
-}  
+  #reviews-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #restaurant-container {
+    padding: 140px 20px 30px;
+  }
+  #reviews-container {
+    padding: 20px 16px 80px;
+  }
 }
 
 @media screen and (max-width: 469px) {
@@ -498,10 +503,21 @@ nav h1 a {
     margin: 0;
     margin-bottom: 15px;
   }
-
   #reviews-container .review-heading .reviewer-name {
     font-size: 21px;
     flex: 1;
   }
+}
 
+@media screen and (max-width: 395px) {
+  nav h1 a {
+    font-size: 9px;
+  }
+  .filter-options select {
+    width: 100px;
+  }
+  .inside #breadcrumb li {
+    font-size: 16px;
+    font-weight: 300;
+  }
 }
