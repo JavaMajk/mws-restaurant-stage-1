@@ -1,6 +1,7 @@
-let cacheName = 'cache1';
+let cacheName = 'cache2';
 const cacheFiles = [
   './',
+  './index.html',
 ];
 
 self.addEventListener('install', event => {
