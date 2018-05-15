@@ -1,5 +1,3 @@
-
-
 /**
  * Common database helper functions.
  */

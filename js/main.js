@@ -1,3 +1,13 @@
+  /**
+ * Adding Service Worker as per: https://developers.google.com/web/fundamentals/codelabs/offline/
+ */
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('./sw.js', {scope: './*'})
+           .then(registration => console.log("Service Worker Registered"))
+           .catch(err => console.log("Service Worker Error", err));
+}
+
 let restaurants,
   neighborhoods,
   cuisines
