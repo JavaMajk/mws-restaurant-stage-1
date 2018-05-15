@@ -327,7 +327,7 @@ nav h1 a {
 
 #restaurant-img {
   width: 100%;
-  filter: blur(6px);
+  /* filter: blur(6px); */
 }
 
 #restaurant-address {
