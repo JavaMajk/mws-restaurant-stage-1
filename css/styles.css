@@ -212,6 +212,7 @@ nav h1 a {
   width: 318px;
   border-radius: 0 12px 0 12px;
   box-shadow: 3px 6px 17px -2px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
 }
 
 .blur {
@@ -221,11 +222,13 @@ nav h1 a {
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
+  transform: scale(1.03);
   margin: 0;
   max-width: 100%;
   min-height: 240px;
   min-width: 100%;
   border-radius: 0 12px 0 0;
+  
 }
 
 #restaurants-list li h1 {

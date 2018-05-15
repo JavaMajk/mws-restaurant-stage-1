@@ -170,7 +170,12 @@ createRestaurantHTML = (restaurant) => {
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more)
-
+  setTimeout(() => {
+        if (image.getAttribute('data-src')) {
+          image.setAttribute('src', image.getAttribute('data-src'));
+          image.classList.remove('blur');
+        }
+  }, 1000);
   return li
 }
 
