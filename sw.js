@@ -17,13 +17,8 @@ this.addEventListener('install', (event) => {
 });
 
 this.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request)
-    .catch(() => {
-      return event.default();
-    }).catch(() => {
-      return caches.match(
-        '/mws-restaurant-stage-1/index.html');
-    })
-  );
+  event.respondWith(caches.match(event.request)
+    .then(function (response) {
+      return response || fetch(event.request);
+    }));
 });
