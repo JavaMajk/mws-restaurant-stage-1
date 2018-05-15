@@ -1,7 +1,7 @@
-let cacheName = 'cache2';
+let cacheName = 'cache3';
 const cacheFiles = [
   './',
-  './index.html',
+  'https://javamajk.github.io/mws-restaurant-stage-1/',
 ];
 
 self.addEventListener('install', event => {
