@@ -4,15 +4,7 @@ let restaurants,
 var map
 var markers = []
 
-/**
- * Adding Service Worker as per: https://developers.google.com/web/fundamentals/codelabs/offline/
- */
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-           .register('./sw.js')
-           .then(registration => console.log("Service Worker Registered"))
-           .catch(err => console.log("Service Worker Error", err));
-}
+
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
