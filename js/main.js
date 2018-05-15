@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
    * Adding Service Worker as per: https://developers.google.com/web/fundamentals/codelabs/offline/
    */
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').then((registration) => {
+    navigator.serviceWorker.register('*/sw.js').then((registration) => {
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }, (err) => {
