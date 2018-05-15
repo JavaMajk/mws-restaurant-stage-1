@@ -105,16 +105,7 @@ updateRestaurants = () => {
       fillRestaurantsHTML();
     }
   });
-  console.log("kurwaa");
-  const imgDefer = document.getElementsByTagName('img');
-      for (const imge of imgDefer) {
-        if (imge.getAttribute('data-src')) {
-          imge.setAttribute('src', imge.getAttribute('data-src'));
-          imge.classList.remove('blur');
-        }
-      }
-    }
-
+}
 
 /**
  * Clear current restaurants, their HTML and remove their map markers.
@@ -149,7 +140,7 @@ createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
   const image = document.createElement('img');
-  image.className = 'restaurant-img';
+  image.className = 'restaurant-img blur';
   image.alt = `Photo of ${restaurant.name}`
   image.src = DBHelper.lowImageUrlForRestaurant(restaurant);
   image.setAttribute('data-src', DBHelper.imageUrlForRestaurant(restaurant));
