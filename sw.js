@@ -30,7 +30,7 @@ self.addEventListener('install', (event) => {
     .then((cache) => {
       console.log('Opened cache');
       return cache.addAll(urlsToCache);
-    }).catch((error) => console / log('Caching error: ', error))
+    }).catch((error) => console.log('Caching error: ', error))
   );
 });
 
