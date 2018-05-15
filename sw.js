@@ -1,6 +1,6 @@
 this.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open('static-v1').then((cache) => {
+    caches.open('static-v2').then((cache) => {
       return cache.add(
         '/mws-restaurant-stage-1/',
         '/mws-restaurant-stage-1/index.html',
@@ -19,8 +19,5 @@ this.addEventListener('install', (event) => {
 this.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request)
-    .catch(() => {
-      return event.default();
-    })
   )
 });
