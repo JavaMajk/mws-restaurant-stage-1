@@ -55,11 +55,11 @@
     // Script goes just before </body>
     // Script from https://varvy.com/pagespeed/defer-images.html
     function init() {
-      const imgDefer = document.getElementsByTagName('img');
+      let imgDefer = document.getElementsByTagName('img');
       for (const imge of imgDefer) {
         if (imge.getAttribute('data-src')) {
           imge.setAttribute('src', imge.getAttribute('data-src'));
-          imge.style.filter = 'blur(0)';
+          imge.classList.remove('blur');
         }
       }
     }

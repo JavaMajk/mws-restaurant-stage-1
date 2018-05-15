@@ -3,13 +3,13 @@
 
 <head>
   <!-- Normalize.css for better cross-browser consistency -->
-  <link rel="icon" type="image/png" href="./img/restaurant-cutlery.png"/>
+  <link rel="icon" type="image/png" href="./img/restaurant-cutlery.png" />
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <!-- Main CSS file -->
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <title>Restaurant Info</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#212224"/>
+  <meta name="theme-color" content="#212224" />
 </head>
 
 <body class="inside">
@@ -17,11 +17,15 @@
   <header>
     <!-- Beginning nav -->
     <nav>
-      <h1><a href="/mws-restaurant-stage-1/">Restaurant Reviews</a></h1>
+      <h1>
+        <a href="/mws-restaurant-stage-1/">Restaurant Reviews</a>
+      </h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
-      <li><a href="/mws-restaurant-stage-1/">Home</a></li>
+    <ul id="breadcrumb">
+      <li>
+        <a href="/mws-restaurant-stage-1/">Home</a>
+      </li>
     </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->
@@ -54,7 +58,10 @@
 
   <!-- Beginning footer -->
   <footer id="footer">
-    Copyright (c) 2017 <a href="/mws-restaurant-stage-1/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017
+    <a href="/mws-restaurant-stage-1/">
+      <strong>Restaurant Reviews</strong>
+    </a> All Rights Reserved.
   </footer>
   <!-- End footer -->
 
@@ -64,22 +71,22 @@
   <!-- Main javascript file -->
   <script type="text/javascript" src="js/restaurant_info.js"></script>
   <!-- Google Maps -->
-  
+
   <script>
-      // Script goes just before </body>
-      // Script from https://varvy.com/pagespeed/defer-images.html
-      function init() {
-        var imgDefer = document.getElementsByTagName('img');
-        for (const imge of imgDefer) {
+    // Script goes just before </body>
+    // Script from https://varvy.com/pagespeed/defer-images.html
+    function init() {
+      var imgDefer = document.getElementsByTagName('img');
+      for (const imge of imgDefer) {
         if (imge.getAttribute('data-src')) {
           imge.setAttribute('src', imge.getAttribute('data-src'));
-          imge.style.filter = 'blur(0)';
+          imge.classList.remove('blur');
         }
       }
-      }
-      window.onload = init;
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4g9NpS4ICq6L1lvWcV8FbfGMo3DFYmC4&libraries=places&callback=initMap"></script>
+    }
+    window.onload = init;
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4g9NpS4ICq6L1lvWcV8FbfGMo3DFYmC4&libraries=places&callback=initMap"></script>
   <!-- End scripts -->
 </body>
 

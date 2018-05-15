@@ -10,6 +10,7 @@ var markers = []
 document.addEventListener('DOMContentLoaded', (event) => {
   fetchNeighborhoods();
   fetchCuisines();
+  
 });
 
 /**
@@ -103,8 +104,17 @@ updateRestaurants = () => {
       resetRestaurants(restaurants);
       fillRestaurantsHTML();
     }
-  })
-}
+  });
+  console.log("kurwaa");
+  const imgDefer = document.getElementsByTagName('img');
+      for (const imge of imgDefer) {
+        if (imge.getAttribute('data-src')) {
+          imge.setAttribute('src', imge.getAttribute('data-src'));
+          imge.classList.remove('blur');
+        }
+      }
+    }
+
 
 /**
  * Clear current restaurants, their HTML and remove their map markers.
@@ -141,8 +151,8 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.alt = `Photo of ${restaurant.name}`
-  image.setAttribute('data-src', DBHelper.imageUrlForRestaurant(restaurant));
   image.src = DBHelper.lowImageUrlForRestaurant(restaurant);
+  image.setAttribute('data-src', DBHelper.imageUrlForRestaurant(restaurant));
   li.append(image);
 
   const name = document.createElement('h1');
