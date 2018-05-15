@@ -1,23 +1,23 @@
-let cacheName = 'cache2';
+let cacheName = 'cache1';
 const cacheFiles = [
-  './mws-restaurant-stage-1/',
-  './mws-restaurant-stage-1/index.html',
-  './mws-restaurant-stage-1/restaurant.html',
-  './mws-restaurant-stage-1/data/restaurants.json',
-  './mws-restaurant-stage-1/js/dbhelper.js',
-  './mws-restaurant-stage-1/js/main.js',
-  './mws-restaurant-stage-1/js/restaurant_info.js',
-  './mws-restaurant-stage-1/css/styles.css',
-  './mws-restaurant-stage-1/img/low-1.jpg',
-  './mws-restaurant-stage-1/img/low-2.jpg',
-  './mws-restaurant-stage-1/img/low-3.jpg',
-  './mws-restaurant-stage-1/img/low-4.jpg',
-  './mws-restaurant-stage-1/img/low-5.jpg',
-  './mws-restaurant-stage-1/img/low-6.jpg',
-  './mws-restaurant-stage-1/img/low-7.jpg',
-  './mws-restaurant-stage-1/img/low-8.jpg',
-  './mws-restaurant-stage-1/img/low-9.jpg',
-  './mws-restaurant-stage-1/img/low-10.jpg'
+  './',
+  './index.html',
+  './restaurant.html',
+  './data/restaurants.json',
+  './js/dbhelper.js',
+  './js/main.js',
+  './js/restaurant_info.js',
+  './css/styles.css',
+  './img/low-1.jpg',
+  './img/low-2.jpg',
+  './img/low-3.jpg',
+  './img/low-4.jpg',
+  './img/low-5.jpg',
+  './img/low-6.jpg',
+  './img/low-7.jpg',
+  './img/low-8.jpg',
+  './img/low-9.jpg',
+  './img/low-10.jpg'
 ];
 
 self.addEventListener('install', event => {
