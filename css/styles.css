@@ -110,7 +110,7 @@ nav h1 a {
   list-style: none;
   /* background-color: rgb(167, 166, 166); */
   /* font-size: 17px; */
-  margin: 0;
+  margin-top: -22px;
   /* width: calc(50% - 80px); */
 }
 
